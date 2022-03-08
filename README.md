@@ -2,7 +2,7 @@
 Nombre: Pablo de la Fuente Rodríguez | Correo: alu0101336152@ull.edu.es\
 Nombre: Samuel Martín Morales        | Correo:
 Nombre: Alejandro                    |
-Nombre:                              |
+Nombre: Javier Mendoza López         | Correo: alu0101320779@ull.edu.es\
 
 
 ## 1. Seminario: DCU
