@@ -1,6 +1,4 @@
 # Grupo-14-UYA
-
-# UyA
 Nombre: Pablo de la Fuente Rodríguez.\
 Correo: alu0101336152@ull.edu.es
 
