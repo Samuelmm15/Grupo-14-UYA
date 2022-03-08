@@ -1,6 +1,9 @@
 # Grupo-14-UYA
-Nombre: Pablo de la Fuente Rodríguez.\
-Correo: alu0101336152@ull.edu.es
+Nombre: Pablo de la Fuente Rodríguez | Correo: alu0101336152@ull.edu.es\
+Nombre: Samuel Martín Morales        | Correo:
+Nombre: Alejandro                    |
+Nombre:                              |
+
 
 ## 1. Seminario: DCU
    Para realizar este seminario, primero todos los alumnos que componemos el grupo de trabajo atendimos a la explicación del profesor sobre lo que es el Diseño Centrado en el Usuario (DCU), así como las partes que lo componen y su metodología de trabajo.\
