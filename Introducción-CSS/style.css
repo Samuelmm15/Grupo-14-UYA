@@ -1,0 +1,38 @@
+body {
+    background-color:bisque;
+    width: 770px;
+    height: auto;
+    font-family: Arial;
+    color: black;
+    font-size: 1.5em;
+}
+
+.Box-1 {
+    background-color: white;
+    width: auto;
+    height: 100px;
+}
+
+.Box-2 {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.Box-3 {
+    background-color: white;
+    width: 240px;
+    height: auto;
+}
+
+.Box-4 {
+    background-color: white;
+    width: 130px;
+    height: auto;
+    position: right;
+}
+
+.Box-5 {
+    background-color: white;
+}
