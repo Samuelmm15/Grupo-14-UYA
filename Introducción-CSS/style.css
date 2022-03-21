@@ -1,38 +1,189 @@
 body {
-    background-color:bisque;
+    background-color:rgb(231, 231, 231);
     width: 770px;
     height: auto;
     font-family: Arial;
     color: black;
+    margin: auto;
+}
+
+.Top {
+    background-image: url(../img/cabecera.jpg);
+
+    width: auto;
+    height: 100px;
+
+    border: 0.15em;
+    border-style: solid;
+
     font-size: 1.5em;
 }
 
-.Box-1 {
-    background-color: white;
-    width: auto;
-    height: 100px;
+.navegacion-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.Box-2 {
-    background-color: white;
-    width: 400px;
-    height: 200px;
-    margin-top: 5px;
+.navegacion-principal li{
+    padding: 0.5rem;
+    list-style: none;
 }
 
-.Box-3 {
-    background-color: white;
-    width: 240px;
-    height: auto;
+.navegacion-principal li:hover{
+    background-color: whitesmoke;
 }
 
-.Box-4 {
-    background-color: white;
+.navegacion-principal a{
+    text-decoration: none;
+    font-weight: 700;
+    color: blue;
+}
+
+.navegacion-principal a:hover{
+    color: red;
+}
+
+.navegacion-principal a:visited{
+    color: blue;
+    
+}
+
+
+
+
+
+.Mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+
+.Izquierda {
+    width: 330px;
+    margin: 0.188em;
+    border: 0.15em;
+    border-style: solid;
+
+    font-size: 1.5em;
+}
+
+.Izquierda p {
+    text-align: justify;
+    margin-top: 0.5em;
+}
+
+.Izquierda p a {
+    text-decoration: none;
+    color: blue;
+}
+
+.Izquierda p a:hover {
+    color: red;
+}
+
+.Izquierda p a:visited {
+    color: blue;
+}
+
+.Izquierda table a {
+    text-decoration: none;
+    color: green;
+}
+
+
+.Centro {
+    width: 360px;
+    margin: 0.188em;
+    border: 0.15em;
+    border-style: solid;
+    
+    font-size: 1.5em;
+}
+
+.Centro p {
+    text-align: justify;
+    margin-top: 0.5em;
+}
+
+.Centro p a {
+    text-decoration: none;
+    color: blue;
+}
+
+.Centro p a:hover {
+    color: red;
+}
+
+.Centro p a:visited {
+    color: blue;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Menu li{
+    padding: 0.3rem;
+    margin-bottom: 0.7rem;
+    list-style: none;
+}
+
+.Menu a{
+    text-decoration: none;
+    font-weight: 700;
+    color: blue;
+}
+
+.Menu a:hover{
+    color: red;
+}
+
+.Menu a:visited{
+    color: blue;
+}
+
+
+
+.Derecha {
     width: 130px;
-    height: auto;
-    position: right;
+    margin:0.188em;
+    border: 0.15em;
+    border-style: solid;
+
+    font-size: 1.5em;
 }
 
-.Box-5 {
-    background-color: white;
+.navegacion-derecha {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.navegacion-derecha a{
+    text-decoration: none;
+    color: blue;
+}
+
+.navegacion-derecha a:hover{
+    color: red;
+}
+
+.navegacion-derecha a:visited{
+    color: blue;
+}
+
+
+
+.Bot {
+    border: 0.15em;
+    border-style: solid;
+    
+    font-size: 1.5em;
 }
