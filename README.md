@@ -17,7 +17,7 @@ Elementos de la práctica subidos al repositorio en la carpeta con el nombre "In
 
 ## Materialize
 Haciendo uso del framework Materialize debemos diseñar un prototipo de página web de inicio para un sitio que muestre información respecto al proyecto que se desarrollará en la asignatura. Seguimos las siguiente pautas indicadas: 
-  - Los estilos se deben establecer con el framework CSS: Materialize. 
-  - No se exige funcionalidad en los elementos que se incorporen.
-\
+* Los estilos se deben establecer con el framework CSS: Materialize. 
+* No se exige funcionalidad en los elementos que se incorporen.
+
 Elementos de la práctica subidos al repositorio en la carpeta con el nombre "Materialize".
