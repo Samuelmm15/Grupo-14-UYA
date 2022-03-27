@@ -63,3 +63,21 @@ footer.page-footer {
 .socials {
   margin: 2px;
 }
+
+.titulo2 {
+  font-size: 40px;
+}
+
+.tituloLibro {
+  font-size: 30px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.imgLibroLista {
+  width: 100px; 
+  height: auto;
+  margin-top: 60px;
+}
