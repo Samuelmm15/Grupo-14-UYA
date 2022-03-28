@@ -21,3 +21,11 @@ Haciendo uso del framework Materialize debemos diseñar un prototipo de página 
 * No se exige funcionalidad en los elementos que se incorporen.
 
 Elementos de la práctica subidos al repositorio en la carpeta con el nombre "Materialize".
+
+## Introducción Javascript
+En esta práctica tenemos el primer contacto con el lenguaje de programación javascript, donde debemos realizar lo siguiente sin utilizar ningún framework:
+1. Realiza un esquema del árbol DOM que genera el siguiente código HTML: https://campusingenieriaytecnologia2122.ull.es/pluginfile.php/32819/mod_assign/intro/dom.html
+2. Define una función en javascript en la que se inserte en una tarjeta un texto que el usuario introduce por el teclado.
+3. Crear un script que muestre un informe de la cantidad de párrafos,  items de lista y elementos div en tu página de inicio.
+4. Define una función javascript que calcule el importe de una compra de un usuario. Se presupone que los datos de la compra están en un json de ejemplo incluido en el script.  En el json se registra para cada usuario su dni, año de nacimiento, número de cuenta, productos en la compra actual, % de descuento (si lo tiene), modalidad de pago. El json debe estar en el propio código, inicializando una variable, explica por qué se te exige este requisito.
+5. Crear una función en el script para agregar en la página el importe de la compra y el día que será efectuado el pago (fecha actual si la compra no es a crédito).
