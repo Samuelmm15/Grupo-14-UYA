@@ -245,22 +245,25 @@
         <div class="col s12 m8">
             <div class="input-field col s12">
               <label>Recomendaciones:</label>
-              <input type="text" placeholder="Inserte el comentario" id="insertedText" class="insertedText">
-              <button class="btn waves-effect waves-light" type="submit" id="button" class="button" name="action">Enviar</button>
-              <p class="Recomendation"></p>
+              <input type="text" placeholder="Inserte el comentario" id="insertedText" onkeyup="addRecomendation()">
+              <button class="btn waves-effect waves-light" type="submit" id="button" name="action">Enviar</button>
             </div>
-            <!-- <div class="card">
-              <p class="Recomendation"></p>
-            </div> -->
         </div>
     </div>
   </div>
 
-  <!-- <div class="input-field">
-    <input id="search" type="search" placeholder="Busca por autor, título ..." required>
-    <label class="label-icon" for="search"><i class="material-icons red-text">search</i></label>
-    <i class="material-icons">close</i>
-  </div> -->
+  <div class="container brown lighten-5">
+    <div class="row">
+      <div class="col s12 m2">
+        <p class="flow-text brown-text lighten-1">Comentarios:</p>
+      </div>
+      <div class="col s12 m8">
+        <div class="card">
+          <p id="Recomendation"></p>    
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="page-footer brown darken-3">
     <div class="container">
