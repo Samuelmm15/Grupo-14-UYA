@@ -31,3 +31,15 @@ En esta práctica tenemos el primer contacto con el lenguaje de programación ja
 5. Crear una función en el script para agregar en la página el importe de la compra y el día que será efectuado el pago (fecha actual si la compra no es a crédito).
 
 Elementos de la práctica subidos al repositorio en la carpeta con el nombre "Introducción-JavaScript".
+
+## Java Script: Ajax; Firebase
+En esta práctica continuaremos con el aprendizaje de Java Script haciendo uso de la librería jQuery, además de Ajax Y Firebase. Las tareas a desempeñar son las siguientes:
+
+Crear una página Web que contenga un formulario con un botón. Cuando el usuario pincha el botón se debe mostrar el contenido que devuelve una API REST simulada en JsonStub que permite obtener el mismo json utilizado en la práctica anterior:
+* La petición al servicio debe ser mediante AJAX.
+* El manejo del DOM, AJAX y eventos se debe realizar con la librería jQuery.  
+* Se debe implementar una regla de validación en la que se controle que el usuario introduce un valor apropiado para algún campo de la petición, en caso contrario se debe agregar un mensaje de error. 
+
+Insertar o  actualizar información en una base de datos Firebase desde alguna página de tu proyecto.
+
+Elementos de la práctica subidos al repositorio en la carpeta con el nombre "JavaScript-Ajax-Firebase".
