@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ES">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -53,44 +53,40 @@
         <h1>Registro</h1>
       </div>	
       <div class="row">
-        <form class="col s12 m12 l12">
+        <form method="post" id="formulario_datos" class="col s12 m12 l12">
           <div class="row">
             <div class="input-field col s12 m6 l6">
-              <input type="text" id="nombre_input" placeholder="Ingresa el nombre" class="validate" required>
+              <input type="text" id="nombre_input" name="nombre" placeholder="Ingresa el nombre" class="validate" required>
             </div>
             <div class="input-field col s12 m6 l6">
-              <input type="text" id="email_input" placeholder="Email" id="email_registro" class="validate" required>
+              <input type="text" id="email_input" name="email" placeholder="Email" id="email_registro" class="validate" required>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m6 l6">
-              <input type="text" id="año_input" placeholder="Año de nacimiento" id="nacimiento_registro" class="validate" required>
+              <input type="text" id="año_input" name="año" placeholder="Año de nacimiento" id="nacimiento_registro" class="validate" required>
             </div>
             <div class="input-field col s12 m6 l6">
-                <input type="text" id="dni_input" placeholder="DNI" id="dni_registro" class="validate" required>
+                <input type="text" id="dni_input" name="dni" placeholder="DNI" id="dni_registro" class="validate" required>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m6 l6">
-              <input type="text" id="pago_input" placeholder="Método de pago" id="metodo_pago_registro" class="validate" required>
+              <input type="text" id="pago_input" name="metodo_pago" placeholder="Método de pago" id="metodo_pago_registro" class="validate" required>
             </div>
             <div class="input-field col s12 m6 l6">
-                <input type="text" id="cuenta_input" placeholder="Número de cuenta" id="numero_cuenta_registro" class="validate" required>
+                <input type="text" id="cuenta_input" name="cuenta" placeholder="Número de cuenta" id="numero_cuenta_registro" class="validate" required>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m12 l12">
-              <input type="password" id="contraseña_input" placeholder="Contraseña" id="contrasena_registro" class="validate" required>
+              <input type="password" id="contraseña_input" name="contraseña" placeholder="Contraseña" id="contrasena_registro" class="validate" required>
             </div>
           </div>
           <button class="btn-large waves-effect waves-teal brown darken-3" type="submit" name="Enviar" id="boton_registro">Enviar<i class="material-icons right">send</i></button>
         </form>   
       </div>
     </div>
-  </div>
-
-  <div class="container">
-    <p id="peticion"></p>
   </div>
 
   <footer class="page-footer brown darken-3">
@@ -159,17 +155,11 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/insert.js"></script>
-  <script src="js/car.js"></script>
-  <script src="js/cash.js"></script>
   <script src="js/jquery-3.6.0.slim.min.js"></script>
   <script src="js/ajax.js"></script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="ajax.js"></script>
-  
-  
+
+
   <script>
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "firebase/app";
@@ -194,7 +184,6 @@
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
   </script>
-
 
   </body>
 </html>

@@ -1,22 +1,24 @@
 
-document.querySelector('form')
-  .addEventListener('submit', e => {
-      e.preventDefault()
-      const data = Object.fromEntries(
-          new FormData(e.target )
-    )
-    alert(JSON.stringify(data))
-});
+ document.querySelector('#formulario_datos')
+    .addEventListener('submit', e => {
+      e.preventDefault();
+      
+      if (validacionContraseña() && validacionDNI() && validacionEmail && validacionNumero() && validacionTexto()) {
+        const datos = Object.fromEntries(new FormData(e.target ))
+        alert(JSON.stringify(datos))
+        console.table(datos)
+        realizarPost(datos);
+      }
+    })
 
-fetch('https://jsonplaceholder.typicode.com/posts', {
-  method: 'POST',
-  body: JSON.stringify(),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+    function realizarPost(datos) {
+      $.ajax({
+        url: 'https://jsonplaceholder.typicode.com/comments',
+        type: 'POST',
+        async: true,
+        data: datos,
+      }).then((response) => response.json()).then((json) => console.log(json));
+    }
 
 function validacionTexto()  {
   var valor = $("#nombre_input").val();
