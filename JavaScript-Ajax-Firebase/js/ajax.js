@@ -17,7 +17,10 @@
         type: 'POST',
         async: true,
         data: datos,
-      }).then((response) => response.json()).then((json) => console.log(json));
+        success: function (respuesta) {
+          console.log(JSON.stringify(respuesta));
+        },
+      });
     }
 
 function validacionTexto()  {
@@ -57,7 +60,7 @@ function validacionNumero()  {
   return true;
 }
 
-function validacionDNI()  {
+function validacionDNI() {
   var valor = $("#dni_input").val();
   if( valor == null || valor.length == 0 || !/^(\d{8})([-]?)([A-Z]{1})$/.test(valor) ) {
     alert('ERROR: El formato del DNI es incorrecto.');
@@ -69,7 +72,7 @@ function validacionDNI()  {
 function validacionContraseña()  {
   var valor = $("#contraseña_input").val();
   if( valor == null || valor.length == 0 || !/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/.test(valor) ) {
-    alert('ERROR: El formato del DNI es incorrecto.');
+    alert('ERROR: El formato de la contraseña es incorrecto.');
     return false;
   }
   return true
