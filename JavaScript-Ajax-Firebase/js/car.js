@@ -1,13 +1,3 @@
-(function($){
-  $(function(){
-
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
-
-
 var usuario={
   dni: 65297425,
   año_nac: 2001,
