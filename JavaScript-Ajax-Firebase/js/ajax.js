@@ -1,15 +1,17 @@
-
- document.querySelector('#formulario_datos')
-    .addEventListener('submit', e => {
-      e.preventDefault();
-      
-      if (validacionContraseña() && validacionDNI() && validacionEmail && validacionNumero() && validacionTexto()) {
-        const datos = Object.fromEntries(new FormData(e.target ))
-        alert(JSON.stringify(datos))
-        console.table(datos)
-        realizarPost(datos);
-      }
-    })
+// import {ref, set, getDatabase} from "firebase/database";
+function writeFirebaseData() {
+  const database = getDatabase();
+  counter++;
+  set(ref(database, 'user/' + counter), {
+    nombre: $("#nombre_input").val(),
+    email: $("#email_input").val(),
+    año: $("#año_input").val(),
+    dni: $("#dni_input").val(),
+    metodo_de_pago: $("#pago_input").val(),
+    cuenta: $("#cuenta_input").val(),
+    contraseña: $("#contraseña_input").val()
+  });
+}
 
     function realizarPost(datos) {
       $.ajax({
@@ -19,7 +21,11 @@
         data: datos,
         success: function (respuesta) {
           console.log(JSON.stringify(respuesta));
+          writeFirebaseData();
         },
+        error: function(error) {
+          console.log(error);
+        }
       });
     }
 
@@ -77,3 +83,15 @@ function validacionContraseña()  {
   }
   return true
 }
+
+document.querySelector('#formulario_datos')
+    .addEventListener('submit', e => {
+      e.preventDefault();
+      var counter = 0;      
+      if (validacionContraseña() && validacionDNI() && validacionEmail() && validacionNumero() && validacionTexto()) {
+        const datos = Object.fromEntries(new FormData(e.target ))
+        alert(JSON.stringify(datos))
+        console.table(datos)
+        realizarPost(datos);
+      }
+    })
