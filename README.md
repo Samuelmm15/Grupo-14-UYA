@@ -3,6 +3,7 @@
 * Nombre: Samuel Martín Morales        | Correo: alu0101359526@ull.edu.es
 * Nombre: Alejandro Lugo Fumero        | Correo: alu0101329185@ull.edu.es
 * Nombre: Javier Mendoza López         | Correo: alu0101320779@ull.edu.es
+* Nombre: Felipe Gómez Fuentes         | Correo: alu0101315713@ull.edu.es
 
 
 ## Introducción HTML
