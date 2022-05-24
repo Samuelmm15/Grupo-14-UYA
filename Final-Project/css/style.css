@@ -1,0 +1,92 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a {
+  color: rgb(0, 0, 0);
+}
+
+.textoImagen {
+  font-size: 30px;
+}
+
+.textoFooter {
+  font-size: 28px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.socials {
+  margin: 2px;
+}
+
+.titulo2 {
+  font-size: 40px;
+}
+
+.tituloLibro {
+  font-size: 30px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.imgLibroLista {
+  width: 100px; 
+  height: auto;
+  margin-top: 60px;
+}
+/*
+  When creating your CSS selector,
+  change "brown" to something of your choosing
+  */
+  .waves-effect.waves-brown .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+     background-color: rgba(121, 85, 72, 0.65);
+   }
