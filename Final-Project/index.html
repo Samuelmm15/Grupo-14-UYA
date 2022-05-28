@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Librería de Libros</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="brown darken-3" role="navigation">
+      <div class="nav-wrapper">
+
+        <ul class="left hide-on-med-and-down">
+          <li><a class="white-text" href="index.html">Inicio</a></li>
+          <li><a class="white-text" href="#">Iniciar sesión</a></li>
+          <li><a class="white-text" href="registro.html">Registrarse</a></li>
+          <li><a class="white-text" href="quienesSomos.html">¿Quiénes Somos?</a></li>
+          <li><a class="white-text" href="#">ES</a></li>
+          <li><a class="white-text" href="#">EN</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav brown darken-3">
+          <li><a class="white-text" href="index.html">Inicio</a></li>
+          <li><a class="white-text" href="#">Iniciar sesión</a></li>
+          <li><a class="white-text" href="registro.html">Registrarse</a></li>
+          <li><a class="white-text" href="quienesSomos.html">¿Quiénes Somos?</a></li>
+          <li><a class="white-text" href="#">ES</a></li>
+          <li><a class="white-text" href="#">EN</a></li>
+        </ul>
+        
+        <form class="right">
+          <div class="input-field">
+            <input id="search" type="search" placeholder="Busca por autor, título ..." required>
+            <label class="label-icon" for="search"><i class="material-icons red-text">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger red-text"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <img class="logo" src="img/logo3.png" alt="logo">          
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/fondo.jpg" alt="Imagen de fondo"></div>
+  </div>
+
+  <div class="container brown lighten-5">
+    <div class="col s12 m4 center">
+      <h2 class="titulo2 center flow-text  brown-text lighten-1">Los 3 más vendidos</h2>
+    </div>
+  </div>
+
+  <div class="container brown lighten-5">
+    <div class="row">
+        
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/La bestia.jpg" alt="Libro La Bestia">
+          </div>
+          <div class="card-content">
+            <p class="dark">La bestia de Carmen Mola</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/El-Italiano.jpg" alt="Libro El Italiano de Arturo Pérez-Reverte">
+          </div>
+          <div class="card-content">
+            <p class="dark">El Italiano de Arturo Pérez-Reverte</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/Nunca.jpg" alt="Libro Nunca de Ken Follet">
+          </div>
+          <div class="card-content">
+            <p class="dark">Nunca de Ken Follet</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container brown lighten-5">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m12 l4">
+          <h2 class="titulo2 center flow-text  brown-text lighten-1">Recomendación</h2>
+          <div class="row">
+            <div class="col s12 m6 center">
+              <img class ="imgLibroLista"src="./img/libro1.png" alt="libro1">
+            </div>
+            <div class="col s12 m6">
+              <h3 class="tituloLibro">Libro 1</h3>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim nisi, semper eget tincidunt ut, elementum nec velit. Quisque eget rutrum ligula. Cras ac vehicula leo.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 center">
+              <img class ="imgLibroLista"src="./img/libro2.png" alt="libro2">
+            </div>
+            <div class="col s12 m6">
+              <h3 class="tituloLibro">Libro 2</h3>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim nisi, semper eget tincidunt ut, elementum nec velit. Quisque eget rutrum ligula. Cras ac vehicula leo.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 center">
+              <img class ="imgLibroLista"src="./img/libro3.png" alt="libro3">
+            </div>
+            <div class="col s12 m6">
+              <h3 class="tituloLibro">Libro 3</h3>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim nisi, semper eget tincidunt ut, elementum nec velit. Quisque eget rutrum ligula. Cras ac vehicula leo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m12 l4">
+          <h2 class="titulo2 center flow-text  brown-text lighten-1">Grupo Kirico</h2>
+          <div class="row">
+            <div class="col s12 m6 center">
+              <img class ="imgLibroLista"src="./img/libro4.png" alt="libro4">
+            </div>
+            <div class="col s12 m6">
+              <h3 class="tituloLibro">Libro 4</h3>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim nisi, semper eget tincidunt ut, elementum nec velit. Quisque eget rutrum ligula. Cras ac vehicula leo.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 center">
+              <img class ="imgLibroLista"src="./img/libro5.png" alt="libro5">
+            </div>
+            <div class="col s12 m6">
+              <h3 class="tituloLibro">Libro 5</h3>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim nisi, semper eget tincidunt ut, elementum nec velit. Quisque eget rutrum ligula. Cras ac vehicula leo.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 center">
+              <img class ="imgLibroLista"src="./img/libro6.png" alt="libro6">
+            </div>
+            <div class="col s12 m6">
+              <h3 class="tituloLibro">Libro 6</h3>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim nisi, semper eget tincidunt ut, elementum nec velit. Quisque eget rutrum ligula. Cras ac vehicula leo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m12 l4">
+          <h2 class="titulo2 center flow-text  brown-text lighten-1">Zona comic</h2>
+          <div class="row">
+            <div class="col s12 m6 center">
+              <img class ="imgLibroLista"src="./img/libro7.png" alt="libro7">
+            </div>
+            <div class="col s12 m6">
+              <h3 class="tituloLibro">Libro 7</h3>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim nisi, semper eget tincidunt ut, elementum nec velit. Quisque eget rutrum ligula. Cras ac vehicula leo.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 center">
+              <img class ="imgLibroLista"src="./img/libro8.png" alt="libro8">
+            </div>
+            <div class="col s12 m6">
+              <h3 class="tituloLibro">Libro 8</h3>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim nisi, semper eget tincidunt ut, elementum nec velit. Quisque eget rutrum ligula. Cras ac vehicula leo.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 center">
+              <img class ="imgLibroLista"src="./img/libro9.png" alt="libro9">
+            </div>
+            <div class="col s12 m6">
+              <h3 class="tituloLibro">Libro 9</h3>
+              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim nisi, semper eget tincidunt ut, elementum nec velit. Quisque eget rutrum ligula. Cras ac vehicula leo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container brown lighten-5">
+        <div class="row">
+          <div class="col s12 m12 center">
+            <button class="btn waves-effect waves-light" id="botonT2">Contador</button>
+          </div>
+          <div class="col s12 m6"></div>
+            <table class="striped">
+              <thead>
+                <tr>
+                    <th class="center">Cantidad de párrafos:</th>
+                    <th class="center">Cantidad de div:</th>
+                    <th class="center">Cantidad de items lista:</th>
+                </tr>
+              </thead>
+    
+              <tbody>
+                <tr>
+                  <td class="center" id="cantidadParrafos"></td>
+                  <td class="center" id="cantidadDiv"></td>
+                  <td class="center" id="cantidadItemLista"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container brown lighten-5">
+    <div class="row">
+        <div class="col s12 m12">
+            <p class="titulo3 flow-text center brown-text lighten-1">Escríbenos sobre alguno de los libros que quiera recomendarnos</p>
+        </div>
+        <div class="col s12 m2">
+        </div>
+        <div class="col s12 m8">
+            <div class="input-field col s12">
+              <label>Recomendaciones:</label>
+              <input type="text" placeholder="Inserte el comentario" id="insertedText" onkeyup="addRecomendation()">
+              <button class="btn waves-effect waves-light" type="submit" id="button" name="action">Enviar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="container brown lighten-5">
+      <div class="row">
+        <div class="col s12 m12 center">
+          <button class="btn waves-effect waves-light" id="botonT3">Carrito de Compra</button>
+        </div>
+        <div class="col s12 m12 center">         
+          <p id="titulo"></p>                  
+          <p id="nombre"></p>               
+          <p id="año"></p>  
+          <p id="dni"></p> 
+          <p id="cuenta"></p>               
+          <p id="descuento"></p>                
+          <p id="pago"></p>
+          <p id="productos"></p>
+          <p id="total"></p>
+          <p id="total_desc"></p> 
+          <p>
+        </div>
+      </div>
+    </div>
+
+  <div class="container brown lighten-5">
+    <div class="row">
+      <div class="col s12 m12 center">
+        <button class="btn waves-effect waves-light" id="botonT4">Importe</button>
+      </div>
+      <div class="col s12 m12 center">
+        <p id="titulo_"></p>          
+        <p id="pago_"></p>                  
+        <p id="fecha_"></p> 
+        <p id="total_desc_"></p>               
+      </div>
+    </div>
+  </div>
+
+  <div class="container brown lighten-5">
+    <div class="row">
+      <div class="col s12 m2">
+        <p class="flow-text brown-text lighten-1">Comentarios:</p>
+      </div>
+      <div class="col s12 m8">
+        <div class="card">
+          <p id="Recomendation"></p>    
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer brown darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <p class="white-text textoFooter">Sobre nosotros</p>
+          <p class="grey-text text-lighten-4">Somos una pequeña empresa de venta de libros de la Isla de Tenerife</p>
+        </div>
+        <div class="col l3 s12">
+          <p class="white-text textoFooter">Ayuda</p>
+          <ul>
+            <li><a class="white-text" href="#!">Preguntas frecuentes</a></li>
+            <li><a class="white-text" href="#!">Devoluciones</a></li>
+            <li><a class="white-text" href="foroPreguntas.html">Foro de preguntas</a></li>
+            <li><a class="white-text" href="#!">Incidencia de pedidos</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <p class="white-text textoFooter">Pagos y envío</p>
+          <ul>
+            <li><a class="white-text" href="#!">Métodos de envío</a></li>
+            <li><a class="white-text" href="#!">Costos de envío</a></li>
+            <li><a class="white-text" href="#!">Límite de peso y tamaño</a></li>
+            <li><a class="white-text" href="#!">¿Cúando envían?</a></li>
+            <li><a class="white-text" href="#!">Problemas de envío</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <p class="white-text textoFooter">Nuestra Empresa</p>
+          <ul>
+            <li><a class="white-text" href="#!">Perfil de la empresa</a></li>
+            <li><a class="white-text" href="#!">Nuestras ventajas</a></li>
+            <li><a class="white-text" href="#!">Política de privacidad</a></li>
+            <li><a class="white-text" href="#!">Novedades</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright brown darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l2 m2 s12">
+            <a class="yellow-text text-lighten-3 left right-align" href="https://github.com/Samuelmm15/Grupo-14-UYA.git">Grupo 14</a>
+          </div>
+          <div class="col l2 m2 s12">
+            <a href="#!"><img src="./img/twitter.png" width="40px" height="auto"></a>
+          </div>
+          <div class="col l2 m2 s12">
+            <a href="#!"><img src="./img/facebook.png" width="40px" height="auto"></a>
+          </div>
+          <div class="col l2 m2 s12">
+            <a href="#!"><img src="./img/instagram.png" width="40px" height="auto"></a>
+          </div>
+          <div class="col l2 m2 s12">
+            <a href="#!"><img src="./img/linkedin.png" width="40px" height="auto"></a>
+          </div>
+          <div class="col l2 m2 s12">
+            <a href="#!"><img src="./img/github.png" width="40px" height="auto"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/insert.js"></script>
+  <script src="js/car.js"></script>
+  <script src="js/cash.js"></script>
+  <script src="js/jquery-3.6.0.slim.min.js"></script>
+
+  </body>
+</html>
