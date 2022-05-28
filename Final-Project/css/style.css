@@ -29,19 +29,10 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.parallax-container .section {
+  width: 100%;
 }
+
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
@@ -81,12 +72,16 @@ h3 {
   height: auto;
   margin-top: 60px;
 }
+
+.separacionArriba {
+  margin: 15px;
+}
 /*
   When creating your CSS selector,
   change "brown" to something of your choosing
   */
-  .waves-effect.waves-brown .waves-ripple {
+.waves-effect.waves-brown .waves-ripple {
     /* The alpha value allows the text and background color
     of the button to still show through. */
      background-color: rgba(121, 85, 72, 0.65);
-   }
+}
