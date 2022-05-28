@@ -76,6 +76,11 @@ h3 {
 .separacionArriba {
   margin: 15px;
 }
+
+hr {
+  height: 5px;
+}
+
 /*
   When creating your CSS selector,
   change "brown" to something of your choosing
