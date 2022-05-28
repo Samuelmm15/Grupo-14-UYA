@@ -79,6 +79,9 @@ h3 {
 
 hr {
   height: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
 }
 
 /*
