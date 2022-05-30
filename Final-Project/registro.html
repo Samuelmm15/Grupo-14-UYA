@@ -25,14 +25,14 @@
           <li><a class="white-text" href="#" aria-label="Poner idioma en inglés">EN</a></li>
         </ul>
         
+        <a href="#" data-target="nav-mobile" id="apendiceMovil" class="sidenav-trigger red-text"><i class="material-icons">menu</i></a>
+
         <form class="right">
           <div class="input-field">
             <input id="search" type="search" placeholder="Busca por autor, título ..." aria-label="Contenido que se quiere buscar" required tabindex="0">
             <label class="label-icon" for="search"><i class="material-icons red-text" tabindex="0" aria-label="buscar">search</i></label>
           </div>
         </form>
-
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger red-text"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
@@ -40,12 +40,12 @@
   <!-- Apendice móvil -->
   <div>
     <ul id="nav-mobile" class="sidenav brown darken-3">
-        <li><a class="white-text" href="index.html">Inicio</a></li>
-        <li><a class="white-text" href="#">Iniciar sesión</a></li>
-        <li><a class="white-text" href="registro.html">Registrarse</a></li>
-        <li><a class="white-text" href="quienesSomos.html">¿Quiénes Somos?</a></li>
-        <li><a class="white-text" href="#">ES</a></li>
-        <li><a class="white-text" href="#">EN</a></li>
+        <li><a class="white-text" href="index.html" tabindex= "-1">Inicio</a></li>
+        <li><a class="white-text" href="#" tabindex= "-1">Iniciar sesión</a></li>
+        <li><a class="white-text" href="registro.html" tabindex= "-1" >Registrarse</a></li>
+        <li><a class="white-text" href="quienesSomos.html" tabindex= "-1">¿Quiénes Somos?</a></li>
+        <li><a class="white-text" href="#" tabindex= "-1">ES</a></li>
+        <li><a class="white-text" href="#" tabindex= "-1">EN</a></li>
     </ul>
   </div>
 
@@ -58,31 +58,38 @@
         <form method="post" id="formulario_datos" class="col s12 m12 l12">
           <div class="row">
             <div class="input-field col s12 m6 l6">
-              <input type="text" id="nombre_input" name="nombre" placeholder="Ingresa el nombre" class="validate" required>
+              <input type="text" id="nombre_input" name="nombre" placeholder="Ingresa el nombre">
+              <label class= "black-text" id="nombre_label"></label>
             </div>
             <div class="input-field col s12 m6 l6">
-              <input type="text" id="email_input" name="email" placeholder="Email" id="email_registro" class="validate" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m6 l6">
-              <input type="text" id="año_input" name="año" placeholder="Año de nacimiento" id="nacimiento_registro" class="validate" required>
-            </div>
-            <div class="input-field col s12 m6 l6">
-                <input type="text" id="dni_input" name="dni" placeholder="DNI" id="dni_registro" class="validate" required>
+              <input type="text" id="email_input" name="email" placeholder="Email" id="email_registro">
+              <label class= "black-text" id="email_label"></label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m6 l6">
-              <input type="text" id="pago_input" name="metodo_pago" placeholder="Método de pago" id="metodo_pago_registro" class="validate" required>
+              <input type="text" id="año_input" name="año" placeholder="Año de nacimiento" id="nacimiento_registro">
+              <label class= "black-text" id="año_label"></label>
             </div>
             <div class="input-field col s12 m6 l6">
-                <input type="text" id="cuenta_input" name="cuenta" placeholder="Número de cuenta" id="numero_cuenta_registro" class="validate" required>
+              <input type="text" id="dni_input" name="dni" placeholder="DNI" id="dni_registro">
+              <label class= "black-text" id="dni_label"></label>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="input-field col s12 m6 l6">
+              <input type="text" id="pago_input" name="metodo_pago" placeholder="Método de pago" id="metodo_pago_registro">
+              <label class= "black-text" id="pago_label"></label>
+            </div>
+            <div class="input-field col s12 m6 l6">
+              <input type="text" id="cuenta_input" name="cuenta" placeholder="Número de cuenta" id="numero_cuenta_registro">
+              <label class= "black-text" id="cuenta_label"></label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m12 l12">
-              <input type="password" id="contraseña_input" name="contraseña" placeholder="Contraseña" id="contrasena_registro" class="validate" required>
+              <input type="password" id="contraseña_input" name="contraseña" placeholder="Contraseña." id="contrasena_registro" aria-label="La contraseña ha de tener entre 8 y 12 letras, una mayúscula, un número y una minúscula.">
+              <label class= "black-text" id="contraseña_label"></label>
             </div>
           </div>
           <button class="btn-large waves-effect waves-teal brown darken-3" type="submit" name="Enviar" id="boton_registro" tabindex="0" aria-label=”Enviar”>Enviar<i class="material-icons right">send</i></button>
@@ -131,22 +138,22 @@
       <div class="container">
         <div class="row">
           <div class="col l2 m2 s12">
-            <a class="yellow-text text-lighten-3 left right-align" href="https://github.com/Samuelmm15/Grupo-14-UYA.git" tabindex="0">Grupo 14</a>
+            <a class="yellow-text text-lighten-3 left right-align" href="https://github.com/Samuelmm15/Grupo-14-UYA.git" tabindex="0" target="_blank">Grupo 14</a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!"><img src="./img/twitter.png" width="40px" height="auto" alt="Red social twitter"></a>
+            <a href="#!" target="_blank"><img src="./img/twitter.png" width="40px" height="auto" alt="Red social twitter"></a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!"><img src="./img/facebook.png" width="40px" height="auto" alt="Red social facebook"></a>
+            <a href="#!" target="_blank"><img src="./img/facebook.png" width="40px" height="auto" alt="Red social facebook"></a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!"><img src="./img/instagram.png" width="40px" height="auto" alt="Red social instagram"></a>
+            <a href="#!" target="_blank"><img src="./img/instagram.png" width="40px" height="auto" alt="Red social instagram"></a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!"><img src="./img/linkedin.png" width="40px" height="auto" alt="Red social linkedin"></a>
+            <a href="#!" target="_blank"><img src="./img/linkedin.png" width="40px" height="auto" alt="Red social linkedin"></a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!"><img src="./img/github.png" width="40px" height="auto" alt="Red social guitjab"></a>
+            <a href="#!" target="_blank"><img src="./img/github.png" width="40px" height="auto" alt="Red social guitjab"></a>
           </div>
         </div>
       </div>

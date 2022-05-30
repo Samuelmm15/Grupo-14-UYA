@@ -4,10 +4,16 @@ import {guardarDatos} from "./firebase.js"
  document.querySelector('#formulario_datos')
  .addEventListener('submit', e => {
    e.preventDefault();
-   
-   if (validacionContraseña() && validacionDNI() && validacionEmail && validacionNumero() && validacionTexto()) {
-     const datos = Object.fromEntries(new FormData(e.target ))
-     alert(JSON.stringify(datos))
+   var nombre = validacionNombre();
+   var pago = validacionPago();
+   var email = validacionEmail();
+   var año = validacionAño();
+   var cuenta = validacionCuenta();
+   var dni = validacionDNI();
+   var contraseña = validacionContraseña();
+
+   if (nombre && pago && email && año && cuenta && dni && contraseña) {
+     const datos = Object.fromEntries(new FormData(e.target ));
      console.table(datos);
      realizarPost(datos);
      guardarDatos(datos);
@@ -26,57 +32,94 @@ import {guardarDatos} from "./firebase.js"
    });
  }
 
-function validacionTexto()  {
+function validacionNombre()  {
 var valor = $("#nombre_input").val();
 if( valor == null || valor.length == 0 || !/^[A-Z]+$/i.test(valor) ) {
- alert('ERROR: El nombre solo puede contener letras.');
+ document.getElementById("nombre_input").ariaLabel = "ERROR: El nombre solo puede contener letras.";
+ document.getElementById("nombre_input").focus();
+ document.getElementById("nombre_label").innerText = "ERROR: El nombre solo puede contener letras.";
+
  return false;
 }
-var valor = $("#pago_input").val();
-if( valor == null || valor.length == 0 || !/^[A-Z]+$/i.test(valor) ) {
- alert('ERROR: El metodo de pago solo puede contener letras.');
- return false;
-}
+document.getElementById("nombre_input").ariaLabel = "";
+document.getElementById("nombre_label").innerText = "";
 return true;
+}
+
+function validacionPago()  {
+  var valor = $("#pago_input").val();
+  if( valor == null || valor.length == 0 || !/^[A-Z]+$/i.test(valor) ) {
+   document.getElementById("pago_input").ariaLabel = "ERROR: El metodo de pago solo puede contener letras.";
+   document.getElementById("pago_input").focus();
+   document.getElementById("pago_label").innerText = "ERROR: El metodo de pago solo puede contener letras.";
+   return false;
+  }
+  document.getElementById("pago_input").ariaLabel = "";
+  document.getElementById("pago_label").innerText = "";
+  return true;
 }
 
 function validacionEmail()  {
 var valor = $("#email_input").val();
 if( valor == null || valor.length == 0 || !/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(valor) ) {
- alert('ERROR: El formato del email es incorrecto.');
+ document.getElementById("email_input").ariaLabel = "El formato del email es incorrecto, un ejemplo de sería anonimo@gmail.com.";
+ document.getElementById("email_input").focus();
+ document.getElementById("email_label").innerText = "El formato del email es incorrecto, un ejemplo de sería anonimo@gmail.com.";
  return false
-} 
+}
+document.getElementById("email_input").ariaLabel = "";
+document.getElementById("email_label").innerText = "";
 return true;
 }
 
-function validacionNumero()  {
+function validacionAño()  {
 var valor = $("#año_input").val();
 if( valor == null || valor.length == 0 ||  !/^[0-9]+$/.test(valor) ) {
- alert('ERROR: El año debe ser un número.');
+ document.getElementById("año_input").ariaLabel = "ERROR: El año debe ser un número.";
+ document.getElementById("año_input").focus();
+ document.getElementById("año_label").innerText = "ERROR: El año debe ser un número.";
  return false;
 }
-var valor = $("#cuenta_input").val();
-if( valor == null || valor.length == 0 ||  !/^[0-9]+$/.test(valor) ) {
- alert('ERROR: El número de cuenta debe ser un número.');
- return false;
-}
+document.getElementById("año_input").ariaLabel = "";
+document.getElementById("año_label").innerText = "";
 return true;
 }
+
+function validacionCuenta()  {
+  var valor = $("#cuenta_input").val();
+  if( valor == null || valor.length == 0 ||  !/^[0-9]+$/.test(valor) ) {
+   document.getElementById("cuenta_input").ariaLabel = "ERROR: El número de cuenta debe ser un número.";
+   document.getElementById("cuenta_input").focus();
+   document.getElementById("cuenta_label").innerText = "ERROR: El número de cuenta debe ser un número.";
+   return false;
+  }
+  document.getElementById("cuenta_input").ariaLabel = "";
+  document.getElementById("cuenta_label").innerText = "";
+  return true;
+  }
 
 function validacionDNI() {
 var valor = $("#dni_input").val();
 if( valor == null || valor.length == 0 || !/^(\d{8})([-]?)([A-Z]{1})$/.test(valor) ) {
- alert('ERROR: El formato del DNI es incorrecto.');
+ document.getElementById("dni_input").ariaLabel = "ERROR: El formato del DNI es incorrecto, debe ser 8 números seguidos de una letra mayúscula.";
+ document.getElementById("dni_input").focus();
+ document.getElementById("dni_label").innerText = "ERROR: El formato del DNI es incorrecto, debe ser 8 números seguidos de una letra mayúscula.";
  return false;
 }
+document.getElementById("dni_input").ariaLabel = "";
+document.getElementById("dni_label").innerText = "";
 return true
 }
 
 function validacionContraseña()  {
 var valor = $("#contraseña_input").val();
 if( valor == null || valor.length == 0 || !/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/.test(valor) ) {
- alert('ERROR: El formato de la contraseña es incorrecto.');
+ document.getElementById("contraseña_input").ariaLabel = "ERROR: la contraseña ha de tener entre 8 y 12 letras, una mayúscula, un número y una minúscula.";
+ document.getElementById("contraseña_input").focus();
+ document.getElementById("contraseña_label").innerText = "ERROR: la contraseña ha de tener entre 8 y 12 letras, una mayúscula, un número y una minúscula.";
  return false;
 }
+document.getElementById("contraseña_input").ariaLabel = "La contraseña ha de tener entre 8 y 12 letras, una mayúscula, un número y una minúscula.";
+document.getElementById("contraseña_label").innerText = "";
 return true
 }
