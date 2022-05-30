@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("titulo").innerHTML = "<h4><br>Compra Final</h4>";
     document.getElementById("nombre").innerHTML = "Nombre: " + usuario.nombre;
     document.getElementById("año").innerHTML = "Año de Nacimiento: " + usuario.año_nac;
-     document.getElementById("dni").innerHTML = "DNI: " + usuario.dni;    
+    document.getElementById("dni").innerHTML = "DNI: " + usuario.dni;    
     document.getElementById("cuenta").innerHTML = "Nº de Cuenta: " + usuario.num_cuenta;
     document.getElementById("descuento").innerHTML = "Descuento: " + usuario.descuento + "%";
     document.getElementById("pago").innerHTML = "Modo de pago: " + usuario.mod_pago;
@@ -38,7 +38,18 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     document.getElementById("productos").innerHTML = "Productos: " + product;  
     document.getElementById("total").innerHTML = "Total (sin aplicar descuento): " + sum + "€";    
-    document.getElementById("total_desc").innerHTML = "Total (aplicando descuento): " + (sum - (sum * (usuario.descuento/100))) + "€";    
+    document.getElementById("total_desc").innerHTML = "Total (aplicando descuento): " + (sum - (sum * (usuario.descuento/100))) + "€";
+
+    document.getElementById("titulo").tabIndex = 0;
+    document.getElementById("nombre").tabIndex = 0;
+    document.getElementById("año").tabIndex = 0;
+    document.getElementById("dni").tabIndex = 0;   
+    document.getElementById("cuenta").tabIndex = 0;
+    document.getElementById("descuento").tabIndex = 0;
+    document.getElementById("pago").tabIndex = 0;
+    document.getElementById("productos").tabIndex = 0;
+    document.getElementById("total").tabIndex = 0;
+    document.getElementById("total_desc").tabIndex = 0;
   }
   botonT3.onclick = GetTotal;
 });

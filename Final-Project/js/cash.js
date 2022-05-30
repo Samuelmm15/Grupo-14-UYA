@@ -30,6 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.getElementById("fecha_").innerHTML = "Fecha de pago: " + fecha_pago;
         document.getElementById("total_desc_").innerHTML = "Total (aplicando descuento): " + (sum - (sum * (usuario1.descuento / 100))) + "€";
+
+        document.getElementById("titulo_").tabIndex = 0;
+        document.getElementById("pago_").tabIndex = 0;
+        document.getElementById("fecha_").tabIndex = 0;
+        document.getElementById("total_desc_").tabIndex = 0;
     }
     botonT4.onclick = GetTotal;
 });

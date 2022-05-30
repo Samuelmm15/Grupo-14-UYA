@@ -25,14 +25,14 @@
           <li><a class="white-text" href="#" aria-label="Poner idioma en inglés">EN</a></li>
         </ul>
         
+        <a href="#" data-target="nav-mobile" id="apendiceMovil" class="sidenav-trigger red-text"><i class="material-icons">menu</i></a>
+
         <form class="right">
           <div class="input-field">
             <input id="search" type="search" placeholder="Busca por autor, título ..." aria-label="Contenido que se quiere buscar" required tabindex="0">
             <label class="label-icon" for="search"><i class="material-icons red-text" tabindex="0" aria-label="buscar">search</i></label>
           </div>
         </form>
-
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger red-text"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
@@ -40,12 +40,12 @@
   <!-- Apendice móvil -->
   <div>
     <ul id="nav-mobile" class="sidenav brown darken-3">
-        <li><a class="white-text" href="index.html">Inicio</a></li>
-        <li><a class="white-text" href="#">Iniciar sesión</a></li>
-        <li><a class="white-text" href="registro.html">Registrarse</a></li>
-        <li><a class="white-text" href="quienesSomos.html">¿Quiénes Somos?</a></li>
-        <li><a class="white-text" href="#">ES</a></li>
-        <li><a class="white-text" href="#">EN</a></li>
+        <li><a class="white-text" href="index.html" tabindex= "-1">Inicio</a></li>
+        <li><a class="white-text" href="#" tabindex= "-1">Iniciar sesión</a></li>
+        <li><a class="white-text" href="registro.html" tabindex= "-1" >Registrarse</a></li>
+        <li><a class="white-text" href="quienesSomos.html" tabindex= "-1">¿Quiénes Somos?</a></li>
+        <li><a class="white-text" href="#" tabindex= "-1">ES</a></li>
+        <li><a class="white-text" href="#" tabindex= "-1">EN</a></li>
     </ul>
   </div>
 
@@ -225,9 +225,9 @@
 
           <tbody>
             <tr>
-              <td class="center" id="cantidadParrafos" tabindex="0"></td>
-              <td class="center" id="cantidadDiv" tabindex="0"></td>
-              <td class="center" id="cantidadItemLista" tabindex="0"></td>
+              <td class="center" id="cantidadParrafos" tabindex="-1"></td>
+              <td class="center" id="cantidadDiv" tabindex="-1"></td>
+              <td class="center" id="cantidadItemLista" tabindex="-1"></td>
             </tr>
           </tbody>
         </table>
@@ -241,16 +241,16 @@
         <button class="btn waves-effect waves-light" id="botonT3" tabindex="0">Carrito de Compra</button>
       </div>
       <div class="col s12 m12 center">         
-        <p id="titulo" tabindex="0"></p>                  
-        <p id="nombre" tabindex="0"></p>               
-        <p id="año" tabindex="0"></p>  
-        <p id="dni" tabindex="0"></p> 
-        <p id="cuenta" tabindex="0"></p>               
-        <p id="descuento" tabindex="0"></p>                
-        <p id="pago" tabindex="0"></p>
-        <p id="productos" tabindex="0"></p>
-        <p id="total" tabindex="0"></p>
-        <p id="total_desc" tabindex="0"></p> 
+        <p id="titulo" tabindex="-1"></p>                  
+        <p id="nombre" tabindex="-1"></p>               
+        <p id="año" tabindex="1-"></p>  
+        <p id="dni" tabindex="-1"></p> 
+        <p id="cuenta" tabindex="-1"></p>               
+        <p id="descuento" tabindex="-1"></p>                
+        <p id="pago" tabindex="-1"></p>
+        <p id="productos" tabindex="-1"></p>
+        <p id="total" tabindex="-1"></p>
+        <p id="total_desc" tabindex="-1"></p> 
         <p>
       </div>
     </div>
@@ -262,10 +262,10 @@
         <button class="btn waves-effect waves-light" id="botonT4" tabindex="0">Importe</button>
       </div>
       <div class="col s12 m12 center">
-        <p id="titulo_" tabindex="0"></p>          
-        <p id="pago_" tabindex="0"></p>                  
-        <p id="fecha_" tabindex="0"></p> 
-        <p id="total_desc_" tabindex="0"></p>               
+        <p id="titulo_" tabindex="-1"></p>          
+        <p id="pago_" tabindex="-1"></p>                  
+        <p id="fecha_" tabindex="-1"></p> 
+        <p id="total_desc_" tabindex="-1"></p>               
       </div>
     </div>
 
@@ -292,7 +292,7 @@
         <p class="brown-text lighten-1 textoImagen" tabindex="0">Comentarios:</p>
       </div>
       <div class="col s12 m8">
-          <p id="Recomendation" class="textoImagen" tabindex="0"></p>    
+          <p id="Recomendation" class="textoImagen" tabindex="-1"></p>    
       </div>
     </div>
   </div>
