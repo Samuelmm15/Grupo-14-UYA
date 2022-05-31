@@ -97,3 +97,16 @@ hr {
     of the button to still show through. */
      background-color: rgba(121, 85, 72, 0.65);
 }
+
+.wk-rma-panel-box #wk-rma-request-list thead tr {
+  background-color: #4e342e;
+  color: #fff;
+}
+
+.wk-rma-panel-box .dataTables_wrapper .dataTables_length select {
+  border: none;
+  box-shadow: 0 2px 5px 0rgba(0,0,0,.08);
+  background-color: #fff;
+  margin: 0 5px;
+  padding: 0 6px;
+}
