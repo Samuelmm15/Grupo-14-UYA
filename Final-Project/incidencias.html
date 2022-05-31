@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="ES">
-
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>¿Quiénes Somos?</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Librería de Libros</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
@@ -25,18 +24,15 @@
           <li><a class="white-text" href="#" aria-label="Poner idioma en español">ES</a></li>
           <li><a class="white-text" href="#" aria-label="Poner idioma en inglés">EN</a></li>
         </ul>
-
-        <a href="#" data-target="nav-mobile" id="apendiceMovil" class="sidenav-trigger red-text"><i
-            class="material-icons">menu</i></a>
-
+        
         <form class="right">
           <div class="input-field">
-            <input id="search" type="search" placeholder="Busca por autor, título ..."
-              aria-label="Contenido que se quiere buscar" required tabindex="0">
-            <label class="label-icon" for="search"><i class="material-icons red-text" tabindex="0"
-                aria-label="buscar">search</i></label>
+            <input id="search" type="search" placeholder="Busca por autor, título ..." aria-label="Contenido que se quiere buscar" required tabindex="0">
+            <label class="label-icon" for="search"><i class="material-icons red-text" tabindex="0" aria-label="buscar">search</i></label>
           </div>
         </form>
+
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger red-text"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
@@ -44,63 +40,120 @@
   <!-- Apendice móvil -->
   <div>
     <ul id="nav-mobile" class="sidenav brown darken-3">
-      <li><a class="white-text" href="index.html" tabindex="-1">Inicio</a></li>
-      <li><a class="white-text" href="login.html" tabindex="-1">Iniciar sesión</a></li>
-      <li><a class="white-text" href="registro.html" tabindex="-1">Registrarse</a></li>
-      <li><a class="white-text" href="quienesSomos.html" tabindex="-1">¿Quiénes Somos?</a></li>
-      <li><a class="white-text" href="#" tabindex="-1">ES</a></li>
-      <li><a class="white-text" href="#" tabindex="-1">EN</a></li>
+        <li><a class="white-text" href="index.html">Inicio</a></li>
+        <li><a class="white-text" href="login.html">Iniciar sesión</a></li>
+        <li><a class="white-text" href="registro.html">Registrarse</a></li>
+        <li><a class="white-text" href="quienesSomos.html">¿Quiénes Somos?</a></li>
+        <li><a class="white-text" href="#">ES</a></li>
+        <li><a class="white-text" href="#">EN</a></li>
     </ul>
   </div>
 
-  <!-- Breadcrumbs -->
-  <div class="container">
-    <div class="row">
-      <nav>
-        <div class="nav-wrapper">
-          <div class="col s12 m12 l12 brown darken-3">
-            <a href="index.html" target="_self" class="breadcrumb" tabindex="0">Inicio</a>
-            <a href="quienesSomos.html" target="_self" class="breadcrumb" tabindex="0">¿Quiénes Somos?</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
 
-  <div class="container">
+  <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row right">
-          <img class="logo" src="img/logo1.png" alt="logo">
+        <div class="row center">
+          <img class="responsive-img" src="img/logo3.png" alt="Logo de la página web" tabindex="0">          
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="center">
-        <h1 tabindex="0">¿Quienes Somos?</h1>
+    <div class="parallax"><img src="img/fondo.jpg" alt="Imagen de fondo"></div>
+  </div>
+
+
+
+  <div class="container brown lighten-5">
+    <div class="row">
+      <div class="col s12 m12 center">
+        <button class="btn waves-effect waves-light separacionArriba" id="botonT2" tabindex="0">Contador</button>
       </div>
-      <div class="section">
+      <div class="col s12 m12">
+        <table class="striped">
+          <thead>
+            <tr>
+                <th class="center" tabindex="0">Cantidad de párrafos:</th>
+                <th class="center" tabindex="0">Cantidad de div:</th>
+                <th class="center" tabindex="0">Cantidad de items lista:</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="center" id="cantidadParrafos" tabindex="0"></td>
+              <td class="center" id="cantidadDiv" tabindex="0"></td>
+              <td class="center" id="cantidadItemLista" tabindex="0"></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="row">
-        <p class="black-text flow-text" tabindex="0">
-          Somos un grupo de estudiantes de Ingeniería Informática de la Universidad de La Laguna que nos encargamos
-          de la realización de un proyecto de desarrollo web para la asignatura Usabilidad y Accesibilidad. Como se
-          puede
-          observar este se trata de nuestro proyecto final de la asignatura.
-        </p>
-        <p class="black-text flow-text" tabindex="0">
-          Este se basa en un sitio web de venta de libros, el cual permite la consulta de cierta información, reseñas,
-          etc,
-          sobre los distintos libros presentados en esta. Además, como se a podido aprender en la asignatura, son
-          implantadas
-          ciertas funcionalidades para usuarios con discapacidades, ya sean auditivas, visuales o que necesiten del uso
-          de dispositivos externos que permitan la correcta
-          navegación de dichos usuarios.
-        </p>
+    </div>
+
+    <hr class="brown darken-3">
+
+    <div class="row">
+      <div class="col s12 m12 center">
+        <button class="btn waves-effect waves-light" id="botonT3" tabindex="0">Carrito de Compra</button>
+      </div>
+      <div class="col s12 m12 center">         
+        <p id="titulo" tabindex="0"></p>                  
+        <p id="nombre" tabindex="0"></p>               
+        <p id="año" tabindex="0"></p>  
+        <p id="dni" tabindex="0"></p> 
+        <p id="cuenta" tabindex="0"></p>               
+        <p id="descuento" tabindex="0"></p>                
+        <p id="pago" tabindex="0"></p>
+        <p id="productos" tabindex="0"></p>
+        <p id="total" tabindex="0"></p>
+        <p id="total_desc" tabindex="0"></p> 
+        <p>
+      </div>
+    </div>
+
+    <hr class="brown darken-3">
+
+    <div class="row">
+      <div class="col s12 m12 center">
+        <button class="btn waves-effect waves-light" id="botonT4" tabindex="0">Importe</button>
+      </div>
+      <div class="col s12 m12 center">
+        <p id="titulo_" tabindex="0"></p>          
+        <p id="pago_" tabindex="0"></p>                  
+        <p id="fecha_" tabindex="0"></p> 
+        <p id="total_desc_" tabindex="0"></p>               
+      </div>
+    </div>
+
+    <hr class="brown darken-3">
+
+    <div class="row">
+      <div class="col s12 m12">
+          <p class="titulo3 flow-text center brown-text lighten-1" tabindex="0">Escríbanos sobre alguno de los libros que quiera recomendarnos:</p>
+      </div>
+      <div class="col s12 m2">
+      </div>
+      <div class="col s12 m8">
+          <div class="input-field col s12">
+            <label tabindex="0">Recomendaciones:</label>
+            <input type="text" placeholder="Inserte el comentario" id="insertedText" onkeyup="addRecomendation()" tabindex="0">
+            <button class="btn waves-effect waves-light" type="submit" id="button" name="action" tabindex="0">Enviar</button>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s12 m4">
+        <p class="brown-text lighten-1 textoImagen" tabindex="0">Comentarios:</p>
+      </div>
+      <div class="col s12 m8">
+          <p id="Recomendation" class="textoImagen" tabindex="0"></p>    
       </div>
     </div>
   </div>
 
+
+  
   <footer class="page-footer brown darken-3">
     <div class="container center-align">
       <div class="row">
@@ -167,9 +220,11 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/cabecera.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/insert.js"></script>
+  <script src="js/car.js"></script>
+  <script src="js/cash.js"></script>
   <script src="js/jquery-3.6.0.slim.min.js"></script>
 
-</body>
-
+  </body>
 </html>
