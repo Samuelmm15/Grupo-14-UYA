@@ -52,6 +52,19 @@
     </ul>
   </div>
 
+  <!-- Breadcrumbs -->
+  <div class="container">
+    <div class="row">
+      <nav>
+        <div class="nav-wrapper">
+          <div class="col s12 m12 l12 brown darken-3">
+            <a href="index.html" target="_self" class="breadcrumb" tabindex="0">Inicio</a>
+            <a href="devoluciones.html" target="_self" class="breadcrumb" tabindex="0">Devoluciones</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
 
   <div id="content-wrapper">
     <div class="container">
@@ -61,20 +74,20 @@
           <img src="https://cdn.discordapp.com/attachments/689954593840431161/981150916474470400/image1-uya.jpg"
             class="img-cabecera-reparaciones">
           <h1 class="titulo_reparaciones"> Gestiona tus problemas y devoluciones en nuestra tienda </h1>
-          <p class="wk-text-right">
             <a title="Crear una nueva solicitud">
-              <button class="btn btn-primary btn-sm" type="button">
+              <button class="btn-large waves-effect waves-teal brown darken-3" type="submit" name="Enviar" id="boton_solicitud"
+            tabindex="0" aria-label="Crear una nueva solicitud">Crear una nueva solicitud<i class="material-icons right">send</i></button>
+              <!-- <button class="btn btn-primary btn-sm" type="button">
                 <i class="fas fa-tools"></i>
                 <span> Crear una nueva solicitud</span>
-              </button>
+              </button> -->
             </a>
-          </p>
           <div class="row wk-rma-panel-box">
             <div class="table-responsive wk-rma-datatable-wrapper">
               <div id="wk-rma-request-list_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                 <div class="row">
                   <div class="col-sm-6">
-                    <div class="dataTables_length" id="wk-rma-request-list_length"><label>Mostar <select
+                    <div class="dataTables_length" id="wk-rma-request-list_length"><label>Mostrar <select
                           name="wk-rma-request-list_length" aria-controls="wk-rma-request-list"
                           class="form-control input-sm">
                           <option value="10">10</option>
