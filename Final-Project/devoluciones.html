@@ -197,35 +197,29 @@
       </div>
     </div>
 
-  <div class="elementor-image-box-wrapper">
-    <figure class="elementor-image-box-img">
-      <img class="responsive-img" src="img/devolucion.png" alt="Cambio o devolución">
-    </figure>
-    <div class="elementor-image-box-content">
-      <h3 class="elementor-image-box-title" tabindex="0">¿Dudas con tu pedido?</h3>
-      <div class="elementor-image-box-description">
-        <p style="text-align: center;" tabindex="0">Si tienes dudas con tu pedido o quieres realizar algún cambio o devolución contacta
-          a través de este de este formulario con nuestro departamento&nbsp;de atención al
-          cliente.</p>
+    <div class="elementor-image-box-wrapper">
+      <figure class="elementor-image-box-img">
+        <img class="responsive-img" src="img/devolucion.png" alt="Cambio o devolución">
+      </figure>
+      <div class="elementor-image-box-content">
+        <h3 class="elementor-image-box-title" tabindex="0">¿Dudas con tu pedido?</h3>
+        <div class="elementor-image-box-description">
+          <p style="text-align: center;" tabindex="0">Si tienes dudas con tu pedido o quieres realizar algún cambio o
+            devolución contacta
+            a través de este de este formulario con nuestro departamento&nbsp;de atención al
+            cliente.</p>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-
-  </section>
 
   <footer class="page-footer brown darken-3">
     <div class="container center-align">
       <div class="row">
         <div class="col l3 s12">
           <p class="white-text textoFooter" tabindex="0">Sobre nosotros</p>
-          <p class="grey-text text-lighten-4" tabindex="0">Somos una pequeña empresa de venta de libros de la Isla de Tenerife</p>
+          <p class="grey-text text-lighten-4" tabindex="0">Somos una pequeña empresa de venta de libros de la Isla de
+            Tenerife</p>
         </div>
         <div class="col l3 s12">
           <p class="white-text textoFooter" tabindex="0">Ayuda</p>
@@ -261,70 +255,76 @@
       <div class="container">
         <div class="row center-align">
           <div class="col l2 m2 s12">
-            <a class="yellow-text text-lighten-3" href="https://github.com/Samuelmm15/Grupo-14-UYA.git" tabindex="0" target="_blank">Grupo 14</a>
+            <a class="yellow-text text-lighten-3" href="https://github.com/Samuelmm15/Grupo-14-UYA.git" tabindex="0"
+              target="_blank">Grupo 14</a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!" target="_blank"><img src="./img/twitter.png" width="40px" height="auto" alt="Red social twitter"></a>
+            <a href="#!" target="_blank"><img src="./img/twitter.png" width="40px" height="auto"
+                alt="Red social twitter"></a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!" target="_blank"><img src="./img/facebook.png" width="40px" height="auto" alt="Red social facebook"></a>
+            <a href="#!" target="_blank"><img src="./img/facebook.png" width="40px" height="auto"
+                alt="Red social facebook"></a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!" target="_blank"><img src="./img/instagram.png" width="40px" height="auto" alt="Red social instagram"></a>
+            <a href="#!" target="_blank"><img src="./img/instagram.png" width="40px" height="auto"
+                alt="Red social instagram"></a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!" target="_blank"><img src="./img/linkedin.png" width="40px" height="auto" alt="Red social linkedin"></a>
+            <a href="#!" target="_blank"><img src="./img/linkedin.png" width="40px" height="auto"
+                alt="Red social linkedin"></a>
           </div>
           <div class="col l2 m2 s12">
-            <a href="#!" target="_blank"><img src="./img/github.png" width="40px" height="auto" alt="Red social guitjab"></a>
+            <a href="#!" target="_blank"><img src="./img/github.png" width="40px" height="auto"
+                alt="Red social guitjab"></a>
           </div>
         </div>
       </div>
     </div>
   </footer>
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/cabecera.js"></script>
-    <script src="js/jquery-3.6.0.slim.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/cabecera.js"></script>
+  <script src="js/jquery-3.6.0.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        var table = $('.display').DataTable({
-          pageLength: 5,
-          lengthMenu: [[5, 10, 15, 20 - 1], [5, 10, 15, 20, "Todo"]],
-          responsive: true, //esto es para que se adapte al tamaño de la pantalla
-          pagingType: "full_numbers",
-          language: {
-            processing: "Procesando...",
-            search: "Buscar:",
-            lengthMenu: "Mostrar _MENU_ registros",
-            info: "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-            infoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
-            infoFiltered: "(filtrado de un total de _MAX_ registros) ",
-            infoPostFix: "",
-            loadingRecords: "Cargando...",
-            zeroRecords: "No se encontraron resultados",
-            emptyTable: "Ningún dato disponible en esta tabla",
-            paginate: {
-              first: "Primero ",
-              previous: "Anterior ",
-              next: " Siguiente ",
-              last: " Último "
-            },
-            aria: {
-              sortAscending: ": Activar para ordenar la columna de manera ascendente",
-              sortDescending: ": Activar para ordenar la columna de manera descendente"
-            }
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var table = $('.display').DataTable({
+        pageLength: 5,
+        lengthMenu: [[5, 10, 15, 20 - 1], [5, 10, 15, 20, "Todo"]],
+        responsive: true, //esto es para que se adapte al tamaño de la pantalla
+        pagingType: "full_numbers",
+        language: {
+          processing: "Procesando...",
+          search: "Buscar:",
+          lengthMenu: "Mostrar _MENU_ registros",
+          info: "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+          infoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
+          infoFiltered: "(filtrado de un total de _MAX_ registros) ",
+          infoPostFix: "",
+          loadingRecords: "Cargando...",
+          zeroRecords: "No se encontraron resultados",
+          emptyTable: "Ningún dato disponible en esta tabla",
+          paginate: {
+            first: "Primero ",
+            previous: "Anterior ",
+            next: " Siguiente ",
+            last: " Último "
           },
-        });
-        // $(".dataTables_paginate span a").css("margin-left", "3px")
-        $(".dataTables_length").hide();
+          aria: {
+            sortAscending: ": Activar para ordenar la columna de manera ascendente",
+            sortDescending: ": Activar para ordenar la columna de manera descendente"
+          }
+        },
       });
-    </script>
+      // $(".dataTables_paginate span a").css("margin-left", "3px")
+      $(".dataTables_length").hide();
+    });
+  </script>
 
 </body>
 
