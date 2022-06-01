@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById("Recomendation").tabIndex = 0;
   }
-  buttonText.onclick = addRecomendation;
+
+  buttonText.onclick = addRecomendation();
 });
 
 

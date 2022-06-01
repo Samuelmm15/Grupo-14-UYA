@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function addQuestion() {
       const insertedText = document.getElementById("insertedText").value;
-      document.getElementById("Question").innerHTML = ' '+insertedText;
+      document.getElementById("Question").innerHTML = ' ' + insertedText;
   
       document.getElementById("Question").tabIndex = 0;
     }
