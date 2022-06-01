@@ -103,7 +103,56 @@ hr {
   color: white;
 }
 
+.dataTables_filter {
+  font-weight: bold;
+  /* font-size: 2px; */
+  margin: auto;
+}
+
 .dataTables_paginate span a {
+  font-size: 20px;
   width: 5%;
   padding: 0 6px;
+  font-weight: 700px;
+}
+
+.dataTables_paginate span a:hover {
+  border: PowderBlue 2px solid; 
+  color: black;
+}
+
+.first {
+  font-size: 20px;
+}
+
+.first:hover {
+  border: PowderBlue 2px solid; 
+  color: black;
+}
+
+.last {
+  font-size: 20px;
+}
+
+.last:hover {
+  border: PowderBlue 2px solid; 
+  color: black;
+}
+
+.next {
+  font-size: 20px;
+}
+
+.next:hover {
+  border: PowderBlue 2px solid; 
+  color: black;
+}
+
+.previous {
+  font-size: 20px;
+}
+
+.previous:hover {
+  border: PowderBlue 2px solid; 
+  color: black;
 }
