@@ -104,25 +104,6 @@ hr {
 }
 
 .dataTables_paginate span a {
-  /* margin-left: 3px !important; */
   width: 5%;
-  /* float: right; */
-  /* margin: auto; */
-  /* border: none; */
-  /* box-shadow: 0 2px 5px 0rgba(0,0,0,.08); */
-  padding: 0 6px !important;
-
-  border: PowderBlue 2px solid;
-}
-
-.next {
-  width: 10%;
-  /* float: right; */
-  border: PowderBlue 2px solid;
-}
-
-.previous {
-  width: 15%;
-  /* float: right; */
-  border: PowderBlue 2px solid;
+  padding: 0 6px;
 }
