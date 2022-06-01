@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
       document.getElementById("Question").tabIndex = 0;
     }
-    buttonText.onclick = addQuestion;
+    buttonText.onclick = addQuestion();
   });
   

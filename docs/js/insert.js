@@ -1,15 +1,12 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-  const buttonText = document.getElementById("button");
+  const buttonText = document.getElementById("botonT5");
   
-  function addRecomendation() {
-    const insertedText = document.getElementById("insertedText").value;
-    document.getElementById("Recomendation").innerHTML = ' '+insertedText;
-
+  function add() {
+    const insertedText = document.getElementById("insertedText").innerText;
+    document.getElementById("Recomendation").innerText = ' ' + insertedText;
     document.getElementById("Recomendation").tabIndex = 0;
   }
 
-  buttonText.onclick = addRecomendation();
+  buttonText.onclick = add();
 });
-
-
